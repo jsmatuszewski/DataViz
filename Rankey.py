@@ -35,9 +35,8 @@ import plotly.graph_objects as go
 from PIL import Image
 import base64
 
-audio_filename = 'http://localhost:9999/wtf.wav'
 
-with open('Image.svg', "rb") as image_file:
+with open('image.png', "rb") as image_file:
     img_data = base64.b64encode(image_file.read())
     img_data = img_data.decode()
     img_data = "{}{}".format("data:Image/png;base64, ", img_data)
